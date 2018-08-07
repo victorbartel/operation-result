@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "noImplicitAny": false,
+      "declaration": true,
+      "listFiles": false,
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "strict": true,
+      "types": ["mocha"],
+      "lib": [
+        "es5",
+        "es6",
+        "es2015.promise"
+      ]
+    },
+    "exclude": [
+      "node_modules",
+      ".vscode",
+      ".serverless",
+      "**/*.spec.ts",
+      ".git"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "atom": {
+      "rewriteTsconfig": false
+    }
+  }

@@ -1,0 +1,43 @@
+{
+  "name": "operation-result",
+  "version": "1.0.2",
+  "description": "result wrapper",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "node ./node_modules/mocha/bin/_mocha --require ts-node/register **/*spec.ts --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorbartel/operation-result.git"
+  },
+  "author": "Victor Bartel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorbartel/operation-result/issues"
+  },
+  "homepage": "https://github.com/victorbartel/operation-result#readme",
+  "dependencies": {
+    "lodash.flow": "^3.5.0",
+    "lodash.head": "^4.0.1",
+    "lodash.isarray": "^4.0.0",
+    "lodash.isequal": "^4.5.0",
+    "lodash.isnil": "^4.0.0",
+    "lodash.keys": "^4.2.0",
+    "lodash.partial": "^4.2.1",
+    "lodash.pickby": "^4.6.0",
+    "lodash.values": "^4.3.0",
+    "lodash.zipobject": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.116",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0",
+    "sinon": "^4.5.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.9.2"
+  }
+}
